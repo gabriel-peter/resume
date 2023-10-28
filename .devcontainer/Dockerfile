@@ -21,7 +21,9 @@ RUN apt-get update && apt-get -y upgrade \
     biber chktex latexmk make python3-pygments python3-pkg-resources \
     texlive-lang-chinese \
     texlive-lang-japanese \ 
-    texlive-xetex
+    texlive-xetex \ 
+    texlive \
+    texlive-fonts-recommended texlive-fonts-extra 
 
 # latexindent modules
 RUN apt-get install --no-install-recommends -y curl
